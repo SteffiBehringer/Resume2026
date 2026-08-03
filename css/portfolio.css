@@ -3,7 +3,7 @@
    ========================================================================== */
 
 /* ---- HERO ---------------------------------------------------------------- */
-.hero { padding: 72px 56px 64px; border-bottom: 1px solid var(--rule); max-width: 680px; }
+.hero { padding: 84px 56px 68px; border-bottom: 1px solid var(--rule); max-width: 760px; }
 .hero-eyebrow {
   font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
   color: var(--green); margin-bottom: 28px; display: flex; align-items: center; gap: 12px;
@@ -13,7 +13,11 @@
   font-family: var(--display); font-size: clamp(26px, 3.5vw, 42px); font-weight: 400; font-style: italic;
   line-height: 1.2; color: var(--ink); margin-bottom: 24px; letter-spacing: -0.01em;
 }
-.hero-positioning { font-family: var(--body); font-size: 15px; color: var(--mid); line-height: 1.65; margin-bottom: 32px; }
+.hero-positioning {
+  font-family: var(--body); font-size: clamp(19px, 2.4vw, 27px); font-weight: 300;
+  color: var(--ink); line-height: 1.5; letter-spacing: -0.01em; margin-bottom: 34px;
+}
+.hero-positioning strong, .hero-positioning b { font-weight: 500; color: var(--neon); }
 .hero-pills { display: flex; gap: 8px; flex-wrap: wrap; }
 .hero-pill {
   font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase;
