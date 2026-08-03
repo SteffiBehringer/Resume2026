@@ -5,7 +5,6 @@
 /* ---- ABOUT --------------------------------------------------------------- */
 .about-page { padding: 72px 56px 64px; }
 .about-hero {
-  max-width: 780px;
   margin-bottom: 56px; padding-bottom: 56px; border-bottom: 1px solid var(--rule);
 }
 /* Future: add class "has-photo" on .about-hero to bring back a photo column. */
