@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Steffi Behringer — Portfolio</title>
+<meta name="description" content="Steffi Behringer — Senior Producer &amp; Partner. Creative, production and experiential work at the intersection of lifestyle, fashion, sports, and entertainment.">
+<meta name="author" content="Steffi Behringer">
+
+<!-- Open Graph / link previews -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Steffi Behringer — Portfolio">
+<meta property="og:description" content="Senior Producer &amp; Partner. Cultural moments at the intersection of lifestyle, fashion, sports, and entertainment.">
+<meta property="og:url" content="https://steffibehringer.com/">
+<meta property="og:image" content="https://steffibehringer.com/images/youtube_athletes.jpg">
+<meta property="og:image:alt" content="YouTube Olympic Creator Studio — Milano Cortina 2026">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Steffi Behringer — Portfolio">
+<meta name="twitter:description" content="Senior Producer &amp; Partner. Cultural moments at the intersection of lifestyle, fashion, sports, and entertainment.">
+<meta name="twitter:image" content="https://steffibehringer.com/images/youtube_athletes.jpg">
+
+<!-- Favicon -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+<!-- Styles — minified bundle (source: css/main.css, nav.css, portfolio.css,
+     pages.css; regenerate with `python3 build.py`) -->
+<link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo" onclick="showPage('work')">STEFFI <span>Behringer</span></div>
+  <ul class="nav-links">
+    <li><a onclick="showPage('work')" class="active" id="nav-work">Work</a></li>
+    <li><a onclick="showPage('about')" id="nav-about">About</a></li>
+    <li><a href="resume/">Resume</a></li>
+  </ul>
+  <a class="nav-cta" onclick="showPage('contact')">Let's Build Together →</a>
+</nav>
+
+<!-- ======================================================= WORK PAGE ==== -->
+<div class="page active" id="page-work">
+  <section class="hero">
+    <div class="hero-eyebrow">Portfolio · 2026</div>
+    <p class="hero-tagline">"Building worlds<br>people feel something in."</p>
+    <p class="hero-positioning">Experiential · Production · Creative — specializing in cultural moments at the intersection of lifestyle, fashion, sports, and entertainment, with intention, transparency, and care for every detail.</p>
+    <div class="hero-pills">
+      <span class="hero-pill">Experiential</span>
+      <span class="hero-pill">Creative Production</span>
+      <span class="hero-pill">Account Management</span>
+      <span class="hero-pill">Project Management</span>
+    </div>
+  </section>
+
+  <div class="work-header">
+    <div class="work-title">Selected Work</div>
+    <div class="work-filter">
+      <button class="filter-btn active" onclick="filterCards('all',this)">All</button>
+      <button class="filter-btn" onclick="filterCards('experiential',this)">Experiential</button>
+      <button class="filter-btn" onclick="filterCards('content',this)">Content</button>
+    </div>
+  </div>
+
+  <!-- Cards are rendered from js/projects.js by js/grid.js -->
+  <div class="project-grid" id="project-grid"></div>
+</div>
+
+<!-- ====================================================== ABOUT PAGE ==== -->
+<div class="page" id="page-about">
+  <div class="about-page">
+    <div class="about-hero">
+      <div>
+        <div class="about-label">About</div>
+        <h1 class="about-heading">Black Forest roots.<br><em>Brooklyn energy.</em></h1>
+        <div class="about-text">
+          <p>Senior Producer — based in Brooklyn, available across the US and Europe. For the past eight years I've built cultural moments at the intersection of lifestyle, fashion, sports, and entertainment.</p>
+          <p>My experience spans both sides of the industry — in-house at an agency and as a freelance senior producer, always as the primary client partner and end-to-end owner.</p>
+          <p>Before the agency world, I founded BMW North America's first retail design program — a pilot that started with 10 BMW dealers on the East Coast, and after six months we scaled it to 339 dealers nationwide.</p>
+          <p>German-raised, Brooklyn-made. Fluent in German and English with a sprinkle of Spanish. When not on set: running, shooting film, and rearranging rooms until they earn their place.</p>
+        </div>
+      </div>
+      <!-- ABOUT PHOTO: to add Steffi's photo, replace the placeholder <div>
+           below with: <img src="images/steffi.jpg" alt="Steffi Behringer"
+           width="340" height="453" loading="lazy" decoding="async"> -->
+      <div class="about-photo">
+        <div class="about-photo-placeholder">
+          <div class="icon">📷</div>
+          <div class="label">Your photo here</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-details">
+      <div class="about-detail-card">
+        <div class="detail-label">Availability</div>
+        <div class="detail-content"><strong>US &amp; German Citizen</strong><br>Available across the US and Europe.<br>Brooklyn, NY · Freiburg, Germany</div>
+      </div>
+      <div class="about-detail-card">
+        <div class="detail-label">Languages</div>
+        <div class="detail-content"><strong>German</strong> — Native<br><strong>English</strong> — Fluent<br><strong>Spanish</strong> — Intermediate</div>
+      </div>
+      <div class="about-detail-card">
+        <div class="detail-label">Beyond the Brief</div>
+        <div class="detail-content">Marathon runner · Film photographer · Interior design obsessive · Detail-driven to the last corner of a room</div>
+      </div>
+    </div>
+    <div class="about-allyship">
+      <div>
+        <div class="allyship-title">Allyship &amp; Action · Co-Founder</div>
+        <div class="allyship-text">Community-driven initiative amplifying underrepresented voices in advertising and production. Featured in Adweek, Ad Council, and Forbes.</div>
+      </div>
+      <div>
+        <a href="https://www.adweek.com/agencies/5-takeaways-allyship-action-execs-better-allies/" class="allyship-link" target="_blank" rel="noopener">Adweek: 5 Takeaways From Allyship &amp; Action</a>
+        <a href="https://drive.google.com/file/d/1Sok7X1nSyW7-N40NEiH50WABASWHIrJO/view" class="allyship-link" target="_blank" rel="noopener">Adweek: Why Your Virtual Event Sucks</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================================================== CONTACT PAGE ==== -->
+<div class="page" id="page-contact">
+  <div class="contact-page">
+    <div class="contact-heading">Let's build</div>
+    <div class="contact-sub">something together.</div>
+    <p class="contact-text">Whether it's a brand activation, a content campaign, or something that doesn't have a name yet — I'd love to hear what you're working on.</p>
+    <div class="contact-detail"><span class="contact-detail-label">Email</span><span class="contact-detail-value"><a href="mailto:steffibehringer89@gmail.com">steffibehringer89@gmail.com</a></span></div>
+    <div class="contact-detail"><span class="contact-detail-label">Phone</span><span class="contact-detail-value">917.518.2917</span></div>
+    <div class="contact-detail"><span class="contact-detail-label">LinkedIn</span><span class="contact-detail-value"><a href="https://linkedin.com/in/stefaniebehringer" target="_blank" rel="noopener">stefaniebehringer</a></span></div>
+    <div class="contact-detail"><span class="contact-detail-label">Based</span><span class="contact-detail-value">Brooklyn, NY · Available US &amp; Europe</span></div>
+    <a href="resume/" class="contact-btn">View Full Resume →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">STEFFI Behringer</div>
+  <div class="footer-cheeky">Arrives early. Leaves late. Brings snacks.</div>
+  <div class="footer-contact"><a href="mailto:steffibehringer89@gmail.com">steffibehringer89@gmail.com</a><br>917.518.2917</div>
+</footer>
+
+<!-- ========================================================== MODAL ==== -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModalOutside(event)">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-inner">
+      <div class="modal-close"><button class="modal-close-btn" onclick="closeModal()">✕ Close</button></div>
+      <div class="modal-header">
+        <div class="modal-tags" id="modal-tags"></div>
+        <div class="modal-title" id="modal-title"></div>
+        <div class="modal-location" id="modal-location"></div>
+      </div>
+      <div id="modal-video-wrap"></div>
+      <div id="modal-images-wrap"></div>
+      <div class="modal-body">
+        <div>
+          <div class="modal-desc" id="modal-desc"></div>
+          <div class="modal-impact" id="modal-impact"></div>
+        </div>
+        <div>
+          <span class="modal-sidebar-label">My Role</span>
+          <div id="modal-roles"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts. projects.js is your editable data (loaded readable). The engine
+     (nav + filter + modal + grid) is the minified bundle app.min.js; it needs
+     PROJECTS + openModal defined, so it loads after projects.js.
+     Source: js/nav.js, filter.js, modal.js, grid.js — rebuild with
+     `python3 build.py`. -->
+<script src="js/projects.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>

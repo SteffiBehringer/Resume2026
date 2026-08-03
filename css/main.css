@@ -1,0 +1,60 @@
+/* ============================================================================
+   MAIN — reset, design tokens, base typography, footer
+   Shared by every page.
+   ========================================================================== */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:      #743D2B;   /* terracotta — page background        */
+  --ink:     #FADDBA;   /* warm sand — primary text            */
+  --neon:    #D4FF00;   /* chartreuse — hero accent, CTAs      */
+  --green:   #5FB870;   /* sage — tags, labels, section heads  */
+  --mid:     #E09A6A;   /* warm orange — secondary text        */
+  --lt:      #9B6845;   /* muted brown — tertiary              */
+  --rule:    #5C2E18;   /* dark rule lines                     */
+  --dark:    #4A2518;
+  --display: 'Syne', sans-serif;
+  --body:    'Outfit', sans-serif;
+  --mono:    'DM Mono', monospace;
+}
+
+html { background: var(--dark); }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+}
+
+/* Pages are swapped by js/nav.js */
+.page { display: none; }
+.page.active { display: block; }
+
+/* FOOTER */
+footer {
+  border-top: 3px solid var(--neon);
+  background: #5C2E18;
+  padding: 20px 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.footer-logo { font-family: var(--display); font-size: 13px; font-weight: 700; color: var(--neon); }
+.footer-cheeky { font-family: var(--mono); font-size: 10px; color: var(--lt); font-style: italic; letter-spacing: 0.06em; }
+.footer-contact { font-family: var(--mono); font-size: 10px; color: var(--mid); text-align: right; line-height: 1.8; }
+.footer-contact a { color: var(--neon); text-decoration: none; }
+
+/* ---- Responsive ---------------------------------------------------------- */
+@media (max-width: 768px) {
+  footer { padding: 18px 28px; flex-wrap: wrap; gap: 12px; }
+  .footer-cheeky { order: 3; width: 100%; text-align: center; }
+}
+@media (max-width: 480px) {
+  footer { flex-direction: column; align-items: flex-start; padding: 18px 20px; }
+  .footer-contact { text-align: left; }
+}

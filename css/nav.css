@@ -1,0 +1,68 @@
+/* ============================================================================
+   NAV — sticky top navigation
+   ========================================================================== */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 56px;
+  border-bottom: 1px solid var(--rule);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 100;
+}
+.nav-logo {
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--neon);
+  letter-spacing: -0.02em;
+  cursor: pointer;
+}
+.nav-logo span { font-weight: 300; }
+
+.nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+.nav-links a {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid);
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--neon); }
+
+.nav-cta {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: var(--neon);
+  padding: 8px 16px;
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* ---- Responsive ---------------------------------------------------------- *
+ * Simplified row (no JS hamburger needed for 3 links + CTA):
+ *  - 768px: tighten spacing, wrap CTA onto a second line if needed
+ *  - 480px: logo + links row, CTA becomes a full-width bar underneath
+ * ------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  nav { padding: 18px 28px; gap: 16px; flex-wrap: wrap; }
+  .nav-links { gap: 20px; }
+}
+@media (max-width: 480px) {
+  nav { padding: 16px 20px; }
+  .nav-logo { font-size: 16px; }
+  .nav-links { gap: 16px; order: 3; }
+  .nav-links a { font-size: 10px; letter-spacing: 0.1em; }
+  .nav-cta { order: 2; margin-left: auto; }
+}

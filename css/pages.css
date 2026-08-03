@@ -1,0 +1,99 @@
+/* ============================================================================
+   PAGES — About + Contact
+   ========================================================================== */
+
+/* ---- ABOUT --------------------------------------------------------------- */
+.about-page { padding: 72px 56px 64px; }
+.about-hero {
+  display: grid; grid-template-columns: 1fr 340px; gap: 64px; align-items: start;
+  margin-bottom: 56px; padding-bottom: 56px; border-bottom: 1px solid var(--rule);
+}
+.about-label {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--green); margin-bottom: 24px; display: flex; align-items: center; gap: 12px;
+}
+.about-label::before { content: ''; width: 24px; height: 1px; background: var(--green); display: inline-block; }
+.about-heading {
+  font-family: var(--display); font-size: clamp(32px, 4vw, 52px); font-weight: 700;
+  color: var(--ink); line-height: 1.1; margin-bottom: 28px; letter-spacing: -0.01em;
+}
+.about-heading em { color: var(--neon); font-style: italic; }
+.about-text { font-family: var(--body); font-size: 15px; color: var(--mid); line-height: 1.8; font-weight: 300; }
+.about-text p + p { margin-top: 18px; }
+
+.about-photo { width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; overflow: hidden; background: var(--rule); }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* Placeholder shown until a real photo is dropped in */
+.about-photo-placeholder {
+  width: 100%; height: 100%; background: var(--rule);
+  display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px;
+}
+.about-photo-placeholder .icon { font-size: 32px; opacity: 0.2; }
+.about-photo-placeholder .label {
+  font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--lt); opacity: 0.5;
+}
+
+.about-details { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px; margin-bottom: 40px; }
+.about-detail-card { background: var(--rule); padding: 24px 20px; }
+.detail-label {
+  font-family: var(--display); font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--green); margin-bottom: 10px;
+}
+.detail-content { font-family: var(--body); font-size: 13px; color: var(--mid); line-height: 1.65; }
+.detail-content strong { color: var(--ink); font-weight: 500; }
+
+.about-allyship {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 32px; padding: 28px;
+  border: 1px solid var(--rule); border-left: 3px solid var(--neon); border-radius: 2px; align-items: center;
+}
+.allyship-title { font-family: var(--display); font-size: 17px; font-weight: 700; color: var(--neon); margin-bottom: 8px; }
+.allyship-text { font-family: var(--body); font-size: 13px; color: var(--mid); line-height: 1.65; }
+.allyship-link {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--green); text-decoration: none; display: flex; align-items: center; gap: 8px; margin-bottom: 10px;
+}
+.allyship-link::before { content: '→'; }
+
+/* ---- CONTACT ------------------------------------------------------------- */
+.contact-page { padding: 72px 56px 80px; max-width: 640px; }
+.contact-heading {
+  font-family: var(--display); font-size: clamp(36px, 5vw, 64px); font-weight: 800;
+  color: var(--neon); line-height: 0.95; letter-spacing: -0.02em; margin-bottom: 8px;
+}
+.contact-sub {
+  font-family: var(--display); font-size: clamp(28px, 4vw, 48px); font-weight: 300; font-style: italic;
+  color: var(--ink); margin-bottom: 36px;
+}
+.contact-text { font-family: var(--body); font-size: 15px; color: var(--mid); line-height: 1.7; margin-bottom: 36px; }
+.contact-detail {
+  display: flex; align-items: baseline; gap: 16px; padding-bottom: 14px;
+  border-bottom: 1px solid var(--rule); margin-bottom: 14px;
+}
+.contact-detail-label {
+  font-family: var(--mono); font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--green); min-width: 80px;
+}
+.contact-detail-value { font-family: var(--body); font-size: 15px; color: var(--ink); }
+.contact-detail-value a { color: var(--neon); text-decoration: none; }
+.contact-btn {
+  display: inline-flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--dark); background: var(--neon);
+  padding: 12px 24px; border-radius: 2px; text-decoration: none; margin-top: 24px;
+}
+
+/* ---- Responsive ---------------------------------------------------------- */
+@media (max-width: 768px) {
+  .about-page { padding: 48px 28px 44px; }
+  .about-hero { grid-template-columns: 1fr; gap: 36px; margin-bottom: 40px; padding-bottom: 40px; }
+  .about-photo { max-width: 340px; }
+  .about-details { grid-template-columns: 1fr; }
+  .about-allyship { grid-template-columns: 1fr; gap: 20px; }
+  .contact-page { padding: 48px 28px 60px; }
+}
+@media (max-width: 480px) {
+  .about-page { padding: 40px 20px 40px; }
+  .contact-page { padding: 40px 20px 52px; }
+  .contact-detail { flex-direction: column; gap: 4px; }
+  .contact-detail-label { min-width: 0; }
+}
