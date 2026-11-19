@@ -105,6 +105,40 @@ const PROJECTS = [
   },
 
   {
+    id: 'verity',
+    client: 'Amazon MGM Studios',
+    work: 'Verity Creator Retreat',
+    title: 'Amazon MGM Studios × Verity Creator Retreat',
+    location: 'New York City & Armonk, NY · Sept 2026',
+    category: 'experiential',
+    hero: 'images/verity_2.jpg',
+    heroSize: 'tall',
+    card: {
+      tags: ['Experiential', 'Creator Experience', 'Film Premiere'],
+      desc: 'A story-led retreat for 30 creators and 3 cast members, from a welcome reception in New York City to the estate where the film was shot.',
+      impact: '30 creators · 3 live days'
+    },
+    tags: ['Experiential', 'Creator Experience', 'Film Premiere'],
+    description: "Amazon MGM Studios invited 30 creators from around the world into the world of Verity. They were guided through the story’s secrets in a cinematic, story-led experience. Creators chose between Lowen, the watchful outsider, and Verity, the woman with something to hide, and found how blurred the line between them is. Each experience fueled conversation and content before the story continued at the premiere the next day. Produced with Stellar Agency.\n\nDay 1 · Welcome reception at Hotel One, New York City, near Central Park\nDay 2 · The estate in Armonk, NY, where the film was shot\nDay 3 · Glam day back at Hotel One, ahead of premiere night\n\n“Perhaps the most unsettling thing about Verity isn’t what you discovered about her. It’s how much of her you recognized in yourself.”",
+    impact: '30 creators · 3 cast members · 3 live days',
+    roles: ['Creator Talent', 'On-Site Production', 'Vendor Management', 'Hospitality & Glam', 'Décor & Swag'],
+    videoId: null,
+    videoType: null,
+    images: [
+      { src: 'images/verity_1.jpg', w: 1600, h: 1069 },
+      { src: 'images/verity_2.jpg', w: 1600, h: 1069 },
+      { src: 'images/verity_3.jpg', w: 1600, h: 1066 },
+      { src: 'images/verity_4.jpg', w: 1600, h: 1069 },
+      { src: 'images/verity_5.jpg', w: 1600, h: 1066 },
+      { src: 'images/verity_6.jpg', w: 1600, h: 1069 },
+      { src: 'images/verity_7.jpg', w: 1600, h: 1069 },
+      { src: 'images/verity_8.jpg', w: 1600, h: 1066 },
+      { src: 'images/verity_9.jpg', w: 1066, h: 1600 },
+      { src: 'images/verity_10.jpg', w: 1600, h: 1066 }
+    ]
+  },
+
+  {
     id: 'empire',
     client: 'EMPIRE',
     work: 'Home Turf',
@@ -236,6 +270,49 @@ const PROJECTS = [
       { src: 'images/xbox_jacket.jpg', w: 1600, h: 1066 },
       { src: 'images/xbox_merch.jpg', w: 1600, h: 1066 },
       { src: 'images/xbox_couch.jpg', w: 1600, h: 1066 }
+    ]
+  },
+
+  {
+    id: 'zeta',
+    client: 'Zeta Global',
+    work: 'Zeta Live',
+    title: 'Zeta Live',
+    location: 'David Geffen Hall, Lincoln Center · New York City · Oct 8, 2026 · Load-in Oct 6–7',
+    category: 'experiential',
+    hero: 'images/zeta_2.jpg',
+    heroSize: 'tall',
+    card: {
+      tags: ['Experiential', 'Conference', 'Live Event'],
+      desc: 'A one-day conference for 2,500+ attendees at David Geffen Hall, with author signings and 1,000+ merch products in guests’ hands.',
+      impact: '2,500+ attendees · 800+ books given away',
+      location: 'David Geffen Hall · New York City · Oct 2026'
+    },
+    tags: ['Experiential', 'Conference', 'Live Event'],
+    description: "Zeta Live brought 2,500+ attendees to David Geffen Hall at Lincoln Center for a one-day conference. Author signings gave away 800+ books, and 1,000+ merch products ended up in attendees’ hands. Produced for Zeta Global with Trademark.",
+    impact: '2,500+ attendees · 800+ books given away · 1,000+ merch products',
+    roles: ['Budget Ownership', 'Vendor Management', 'Scenic & AV', 'Talent & Programming', 'Client Contact', 'On-Site Production'],
+    videoId: null,
+    videoType: null,
+    images: [
+      { src: 'images/zeta_1.jpg', w: 1600, h: 1067 },
+      { src: 'images/zeta_2.jpg', w: 1600, h: 1066 },
+      { src: 'images/zeta_3.jpg', w: 1600, h: 1066 },
+      { src: 'images/zeta_4.jpg', w: 1600, h: 1066 },
+      { src: 'images/zeta_5.jpg', w: 1600, h: 1066 },
+      { src: 'images/zeta_6.jpg', w: 1066, h: 1600 },
+      { src: 'images/zeta_7.jpg', w: 1600, h: 1066 },
+      { src: 'images/zeta_8.jpg', w: 1600, h: 1067 },
+      { src: 'images/zeta_9.jpg', w: 1067, h: 1600 },
+      { src: 'images/zeta_10.jpg', w: 1600, h: 1066 },
+      { src: 'images/zeta_11.jpg', w: 1600, h: 1066 },
+      { src: 'images/zeta_12.jpg', w: 1600, h: 1067 },
+      { src: 'images/zeta_13.jpg', w: 1600, h: 1067 },
+      { src: 'images/zeta_14.jpg', w: 1600, h: 1208 },
+      { src: 'images/zeta_15.jpg', w: 1600, h: 1067 },
+      { src: 'images/zeta_16.jpg', w: 1506, h: 1600 },
+      { src: 'images/zeta_17.jpg', w: 1066, h: 1600 },
+      { src: 'images/zeta_18.jpg', w: 1066, h: 1600 }
     ]
   },
 

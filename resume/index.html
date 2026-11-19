@@ -132,25 +132,6 @@ body::before {
 }
 .contact-line a { color: var(--neon); text-decoration: none; }
 
-/* ── VIEW PORTFOLIO BUTTON ── */
-.portfolio-btn {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #4A2518;
-  background: var(--neon);
-  padding: 9px 16px;
-  border-radius: 2px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 6px;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-.portfolio-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35); }
-
 /* ── ACCENT RULE ── */
 .accent-rule {
   height: 3px;
@@ -263,9 +244,7 @@ body::before {
   grid-template-columns: 1fr auto;
   align-items: baseline;
   gap: 16px;
-  margin-bottom: 14px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--rule);
+  margin-bottom: 6px;
 }
 .palette-title {
   font-family: var(--display);
@@ -564,11 +543,21 @@ body::before {
 .client-logo:last-child { border-right: none; }
 .client-logo:hover { opacity: 0.7; }
 
+@page { size: letter; margin: 0; }
 @media print {
-  html { background: var(--bg); }
-  body { box-shadow: none; max-width: 100%; }
+  html { background: var(--bg); zoom: 0.74; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { box-shadow: none; max-width: 1100px; margin: 0 auto; }
+  body::before { display: none; }
+  .masthead, .accent-rule, .main-grid, .footer-strip { animation: none; }
+  .project-item, .bmw-block, .edu-card, .press-item, .lang-item { break-inside: avoid; page-break-inside: avoid; }
+  .section-header, .subsection-label { break-after: avoid; page-break-after: avoid; }
   .project-item:hover { background: transparent; }
 }
+
+/* PROJECT DATES + PORTFOLIO BUTTON */
+.project-date { margin-left: auto; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; color: var(--lt); white-space: nowrap; }
+.portfolio-btn { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #4A2518; background: var(--neon); padding: 9px 16px; border-radius: 2px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.portfolio-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35); }
 </style>
 </head>
 <body>
@@ -591,10 +580,10 @@ body::before {
   </div>
   <div class="masthead-right">
     <div class="contact-line">
-      <a href="mailto:steffibehringer89@gmail.com">steffibehringer89@gmail.com</a><br>
+      <a href="mailto:steffibehringer89@gmail.com">E-Mail · steffibehringer89@gmail.com</a><br>
       917.518.2917<br>
       US &amp; German Citizen<br>
-      <a href="https://linkedin.com/in/stefaniebehringer">LinkedIn · stefaniebehringer</a>
+      <a href="https://www.linkedin.com/in/stefanie-behringer/" target="_blank" rel="noopener">LinkedIn · stefanie-behringer</a>
     </div>
     <a href="../" class="portfolio-btn">View Portfolio →</a>
   </div>
@@ -608,19 +597,19 @@ body::before {
   <!-- ── CONTENT ── -->
   <main class="content">
 
-    <!-- PALETTE GROUP -->
+    <!-- FREELANCE -->
     <section class="section">
       <div class="section-header">
         <span class="section-title">Experience</span>
         <div class="section-rule"></div>
       </div>
       <div class="palette-role">
-        <div class="palette-title">Senior Producer (Freelance)  ·  Partner @ Palette Group</div>
+        <div class="palette-title">Freelance Senior Producer</div>
         <div class="palette-dates">2018 – Present</div>
       </div>
-      <div class="palette-meta">New York City · Europe / US · Experiential · Brand Activations · Content Production</div>
+      <div class="palette-meta">Based in New York City &amp; Europe</div>
       <ul class="palette-bullets">
-        <li>End-to-end production across experiential, brand activation, and content projects — budgets up to $3M+</li>
+        <li>End-to-end production across experiential and brand activation — budgets up to $3M+</li>
         <li>Primary creative &amp; strategic client partner across all project phases</li>
         <li>Built internal production systems, workflows, and operational frameworks</li>
         <li>Cross-functional vendor ecosystem: fabrication, F&amp;B, A/V, talent, staffing, agency partners</li>
@@ -633,7 +622,6 @@ body::before {
         <span class="section-title">Experiential &amp; Event Production</span>
         <div class="section-rule"></div>
       </div>
-      <p class="content-intro">Across all projects: primary client lead · budget ownership · production systems architect · vendor management</p>
 
       <div class="project-list">
 
@@ -647,7 +635,7 @@ body::before {
             <div class="project-tags">
               <span class="project-tag">Client Lead</span>
               <span class="project-tag">Creative Direction</span>
-              <span class="project-tag">Full Build Lifecycle</span>
+              <span class="project-tag">Vendor Management</span>
               <span class="project-tag">On-Site Production</span>
               <span class="project-tag">Budget Ownership</span>
               <span class="project-tag">International Logistics</span>
@@ -663,6 +651,7 @@ body::before {
             <div class="project-name-row">
               <span class="project-name">Meta Conversations 2026</span>
               <span class="project-location">Westminster Hall, London, UK</span>
+              <span class="project-date">Jun 2026</span>
             </div>
             <div class="project-tags">
               <span class="project-tag">Client Lead</span>
@@ -680,8 +669,30 @@ body::before {
           <div class="project-number">03</div>
           <div class="project-body">
             <div class="project-name-row">
+              <span class="project-name">Amazon MGM Studios × Verity Creator Retreat</span>
+              <span class="project-location">New York City &amp; Armonk, NY</span>
+              <span class="project-date">Sep 2026</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Client Lead</span>
+              <span class="project-tag">Creator Talent</span>
+              <span class="project-tag">On-Site Production</span>
+              <span class="project-tag">Vendor Management</span>
+              <span class="project-tag">Hospitality &amp; Glam</span>
+              <span class="project-tag">Décor &amp; Swag</span>
+            </div>
+            <p class="project-desc">Three-day, story-led creator retreat for Amazon MGM Studios' <em>Verity</em> premiere, produced with Stellar Agency. Hosted 30 creators from around the world and 3 cast members across a welcome reception at Hotel One in New York City, an immersive day at the Armonk estate where the film was shot, and a glam day ahead of the premiere. Client contact, owning vendors, on-site production, creator talent, an 8-person glam team, décor, and swag.</p>
+            <div class="project-impact">30 creators · 3 cast members · 3 live days</div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-number">04</div>
+          <div class="project-body">
+            <div class="project-name-row">
               <span class="project-name">EMPIRE's Home Turf</span>
               <span class="project-location">Super Bowl LX, San Francisco · Forbes-featured</span>
+              <span class="project-date">Feb 2026</span>
             </div>
             <div class="project-tags">
               <span class="project-tag">Client Lead</span>
@@ -697,16 +708,16 @@ body::before {
         </div>
 
         <div class="project-item">
-          <div class="project-number">04</div>
+          <div class="project-number">05</div>
           <div class="project-body">
             <div class="project-name-row">
               <span class="project-name">Xbox × Brooklyn Nets</span>
               <span class="project-location">Bed-Stuy, Brooklyn</span>
+              <span class="project-date">Apr 2023</span>
             </div>
             <div class="project-tags">
               <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Spatial Design</span>
-              <span class="project-tag">Cross-Functional Teams</span>
+              <span class="project-tag">Vendor Management</span>
               <span class="project-tag">Partner Management</span>
               <span class="project-tag">On-Site Execution</span>
               <span class="project-tag">Budget Ownership</span>
@@ -716,15 +727,16 @@ body::before {
         </div>
 
         <div class="project-item">
-          <div class="project-number">05</div>
+          <div class="project-number">06</div>
           <div class="project-body">
             <div class="project-name-row">
               <span class="project-name">NASCAR: Bubba's Block Party</span>
               <span class="project-location">Richmond, VA</span>
+              <span class="project-date">Aug 2022</span>
             </div>
             <div class="project-tags">
               <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Strategy &amp; Concept</span>
+              <span class="project-tag">Production Oversight</span>
               <span class="project-tag">Community Programming</span>
               <span class="project-tag">Talent Partnerships</span>
               <span class="project-tag">Vendor Sourcing</span>
@@ -736,30 +748,12 @@ body::before {
         </div>
 
         <div class="project-item">
-          <div class="project-number">06</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">Bundesliga: Common Ground</span>
-              <span class="project-location">New York, NY</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Event Production</span>
-              <span class="project-tag">Programming</span>
-              <span class="project-tag">Local Partnerships</span>
-              <span class="project-tag">Budget Ownership</span>
-            </div>
-            <p class="project-desc">Led end-to-end production of the NYC launch for Bundesliga's global Common Ground platform. Competitive tournaments, FIFA eSports, ESPN+ lounge, and live DJ programming.</p>
-            <div class="project-impact">200+ attendees</div>
-          </div>
-        </div>
-
-        <div class="project-item">
           <div class="project-number">07</div>
           <div class="project-body">
             <div class="project-name-row">
               <span class="project-name">Fendi × Versace 'Fendace' Retail Pop-Up</span>
-              <span class="project-location">Soho, NYC · 2022</span>
+              <span class="project-location">Soho, NYC</span>
+              <span class="project-date">May 2022</span>
             </div>
             <div class="project-tags">
               <span class="project-tag">Client Lead</span>
@@ -777,13 +771,32 @@ body::before {
           <div class="project-number">08</div>
           <div class="project-body">
             <div class="project-name-row">
+              <span class="project-name">Bundesliga: Common Ground</span>
+              <span class="project-location">New York, NY</span>
+              <span class="project-date">Sep 2022</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Client Lead</span>
+              <span class="project-tag">Event Production</span>
+              <span class="project-tag">Programming</span>
+              <span class="project-tag">Local Partnerships</span>
+              <span class="project-tag">Budget Ownership</span>
+            </div>
+            <p class="project-desc">Led end-to-end production of the NYC launch for Bundesliga's global Common Ground platform. Competitive tournaments, FIFA eSports, ESPN+ lounge, and live DJ programming.</p>
+            <div class="project-impact">200+ attendees</div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-number">09</div>
+          <div class="project-body">
+            <div class="project-name-row">
               <span class="project-name">YouTube Creator Connections</span>
               <span class="project-location">Ongoing Series</span>
             </div>
             <div class="project-tags">
               <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Production Systems</span>
-              <span class="project-tag">Series Production</span>
+              <span class="project-tag">Production Oversight</span>
               <span class="project-tag">Creator Activations</span>
               <span class="project-tag">Creative Programming</span>
             </div>
@@ -792,11 +805,12 @@ body::before {
         </div>
 
         <div class="project-item">
-          <div class="project-number">09</div>
+          <div class="project-number">10</div>
           <div class="project-body">
             <div class="project-name-row">
               <span class="project-name">Google at AdWeek</span>
               <span class="project-location">Highline Stages, NYC</span>
+              <span class="project-date">Sep 2019</span>
             </div>
             <div class="project-tags">
               <span class="project-tag">Client Lead</span>
@@ -809,15 +823,37 @@ body::before {
         </div>
 
         <div class="project-item">
-          <div class="project-number">10</div>
+          <div class="project-number">11</div>
+          <div class="project-body">
+            <div class="project-name-row">
+              <span class="project-name">Zeta Live</span>
+              <span class="project-location">David Geffen Hall, Lincoln Center, New York City</span>
+              <span class="project-date">Oct 2026</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Budget Ownership</span>
+              <span class="project-tag">Vendor Management</span>
+              <span class="project-tag">Scenic &amp; AV</span>
+              <span class="project-tag">Talent &amp; Programming</span>
+              <span class="project-tag">Client Contact</span>
+              <span class="project-tag">On-Site Production</span>
+            </div>
+            <p class="project-desc">One-day conference for Zeta Global at David Geffen Hall, welcoming 2,500+ attendees, produced as a freelance Senior Producer through Trademark. Managed budget and vendors across scenic, AV, and fabrication from kickoff through load-out, and handled programming and talent, including author and artist signings. Day-to-day client contact for Zeta Global. On site, led the staff, including brand ambassadors and production assistants, and ran load-in, load-out, and the show schedule inside a union venue.</p>
+            <div class="project-impact">2,500+ attendees · 800+ books given away · 1,000+ merch products</div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-number">12</div>
           <div class="project-body">
             <div class="project-name-row">
               <span class="project-name">Under Armour × NBA All Star Week</span>
               <span class="project-location">Charlotte, NC</span>
+              <span class="project-date">Feb 2019</span>
             </div>
             <div class="project-tags">
               <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Production Systems</span>
+              <span class="project-tag">Production Lead</span>
               <span class="project-tag">Logistics &amp; Operations</span>
               <span class="project-tag">Vendor Management</span>
               <span class="project-tag">Budget Ownership</span>
@@ -827,16 +863,17 @@ body::before {
         </div>
 
         <div class="project-item">
-          <div class="project-number">11</div>
+          <div class="project-number">13</div>
           <div class="project-body">
             <div class="project-name-row">
               <span class="project-name">The Rockefeller Center Holiday Pop-Up</span>
               <span class="project-location">New York, NY</span>
+              <span class="project-date">Dec 2018</span>
             </div>
             <div class="project-tags">
               <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Production Systems</span>
-              <span class="project-tag">Full Production Lifecycle</span>
+              <span class="project-tag">Production Lead</span>
+              <span class="project-tag">Vendor &amp; Partner Sourcing</span>
               <span class="project-tag">Daily Operations</span>
               <span class="project-tag">Budget Ownership</span>
             </div>
@@ -847,13 +884,13 @@ body::before {
       </div>
     </section>
 
-    <!-- CONTENT PRODUCTION -->
+    <!-- PALETTE GROUP -->
     <section class="section">
-      <div class="section-header">
-        <span class="section-title">Content Production</span>
-        <div class="section-rule"></div>
+      <div class="palette-role">
+        <div class="palette-title">Executive Producer &amp; Partner  ·  Palette Group</div>
+        <div class="palette-dates">2020 – Present</div>
       </div>
-      <p class="content-intro">Across all projects: primary client lead · budget ownership · crew hiring · production systems · on-set oversight · post-production</p>
+      <div class="palette-meta">Content Production</div>
 
       <div class="project-list">
 
@@ -881,6 +918,7 @@ body::before {
           <div class="project-body">
             <div class="project-name-row">
               <span class="project-name">Brooks Running × Patrick Schwarzenegger</span>
+              <span class="project-date">Jun 2025</span>
             </div>
             <div class="project-tags">
               <span class="project-tag">Client Lead</span>
@@ -904,7 +942,6 @@ body::before {
             </div>
             <div class="project-tags">
               <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Creative Execution</span>
               <span class="project-tag">Crew Hiring</span>
               <span class="project-tag">Budget Ownership</span>
               <span class="project-tag">On-Set Oversight</span>
@@ -918,10 +955,11 @@ body::before {
           <div class="project-body">
             <div class="project-name-row">
               <span class="project-name">PUMA AW25 Back to School Campaign</span>
+              <span class="project-date">Jan 2025</span>
             </div>
             <div class="project-tags">
               <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Creative Oversight</span>
+              <span class="project-tag">Production Oversight</span>
               <span class="project-tag">Crew Hiring</span>
               <span class="project-tag">Budget Ownership</span>
               <span class="project-tag">Post-Production Leadership</span>
@@ -935,10 +973,11 @@ body::before {
           <div class="project-body">
             <div class="project-name-row">
               <span class="project-name">Clarks AW25 Wallabee Evo 'Back to School'</span>
+              <span class="project-date">Feb 2025</span>
             </div>
             <div class="project-tags">
               <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Creative Direction</span>
+              <span class="project-tag">Production Oversight</span>
               <span class="project-tag">Crew Hiring</span>
               <span class="project-tag">Budget Ownership</span>
               <span class="project-tag">Location Management</span>

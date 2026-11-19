@@ -191,7 +191,7 @@
 .carousel-dot.active { background: var(--neon); }
 
 .modal-body { display: grid; grid-template-columns: 1fr 260px; gap: 48px; }
-.modal-desc { font-family: var(--body); font-size: 15px; color: var(--mid); line-height: 1.75; }
+.modal-desc { font-family: var(--body); font-size: 15px; color: var(--mid); line-height: 1.75;  white-space: pre-line; }
 .modal-impact { font-family: var(--display); font-size: 17px; color: var(--neon); margin-top: 20px; display: flex; align-items: center; gap: 8px; }
 .modal-impact::before { content: '↗'; font-size: 13px; }
 .modal-sidebar-label {
