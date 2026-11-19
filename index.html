@@ -3,1148 +3,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Steffi Behringer — Producer</title>
+<title>Steffi Behringer — Portfolio</title>
+<meta name="description" content="Steffi Behringer — Senior Producer &amp; Partner. Creative, production and experiential work at the intersection of lifestyle, fashion, sports, and entertainment.">
+<meta name="author" content="Steffi Behringer">
+
+<!-- Open Graph / link previews -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Steffi Behringer — Portfolio">
+<meta property="og:description" content="Senior Producer &amp; Partner. Cultural moments at the intersection of lifestyle, fashion, sports, and entertainment.">
+<meta property="og:url" content="https://steffibehringer.com/">
+<meta property="og:image" content="https://steffibehringer.com/images/youtube_athletes.jpg">
+<meta property="og:image:alt" content="YouTube Olympic Creator Studio — Milano Cortina 2026">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Steffi Behringer — Portfolio">
+<meta name="twitter:description" content="Senior Producer &amp; Partner. Cultural moments at the intersection of lifestyle, fashion, sports, and entertainment.">
+<meta name="twitter:image" content="https://steffibehringer.com/images/youtube_athletes.jpg">
+
+<!-- Favicon -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
 
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-:root {
-  --bg:     #743D2B;
-  --ink:    #FADDBA;
-  --neon:   #D4FF00;
-  --peach:  #C68863;
-  --green:  #5FB870;
-  --mid:    #E09A6A;
-  --lt:     #9B6845;
-  --rule:   #5C2E18;
-  --display:'Syne', sans-serif;
-  --body:   'Outfit', sans-serif;
-  --mono:   'DM Mono', monospace;
-}
-
-html { background: #4A2518; }
-
-body {
-  background: var(--bg);
-  color: var(--ink);
-  font-family: var(--body);
-  max-width: 1100px;
-  margin: 0 auto;
-  position: relative;
-  box-shadow: 0 8px 80px rgba(0,0,0,0.5);
-  min-height: 100vh;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  opacity: 0.35;
-  z-index: 0;
-}
-
-/* ── MASTHEAD ── */
-.masthead {
-  padding: 48px 56px 0;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: end;
-  gap: 32px;
-  position: relative;
-  z-index: 1;
-}
-
-.issue-line {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  color: var(--lt);
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.issue-line::before {
-  content: '';
-  display: inline-block;
-  width: 28px; height: 1px;
-  background: var(--green);
-}
-
-.name-first {
-  font-family: var(--display);
-  font-size: clamp(72px, 10vw, 116px);
-  font-weight: 800;
-  line-height: 0.88;
-  color: var(--neon);
-  letter-spacing: -0.02em;
-  display: block;
-}
-.name-last {
-  font-family: var(--display);
-  font-size: clamp(72px, 10vw, 116px);
-  font-weight: 400;
-  line-height: 0.88;
-  color: var(--neon);
-  letter-spacing: -0.01em;
-  display: block;
-}
-
-/* Pills: neon yellow bg, dark text */
-.title-strip {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.title-pill {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #4A2518;
-  background: var(--neon);
-  padding: 5px 12px;
-  border-radius: 2px;
-}
-
-.masthead-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 8px;
-  padding-bottom: 12px;
-}
-.contact-line {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  color: var(--mid);
-  text-align: right;
-  line-height: 2;
-}
-.contact-line a { color: var(--neon); text-decoration: none; }
-
-/* ── ACCENT RULE ── */
-.accent-rule {
-  height: 3px;
-  background: var(--neon);
-  margin: 28px 56px 0;
-  position: relative;
-  z-index: 1;
-}
-
-/* ── MAIN GRID ── */
-.main-grid {
-  display: grid;
-  grid-template-columns: 1fr 220px;
-  gap: 0;
-  position: relative;
-  z-index: 1;
-}
-
-/* ── SIDEBAR ── */
-.sidebar {
-  border-left: 1px solid var(--rule);
-  padding: 36px 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-}
-
-.sidebar-label {
-  font-family: var(--display);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--green);
-  margin-bottom: 12px;
-  display: block;
-}
-
-.beyond-text {
-  font-family: var(--body);
-  font-size: 13px;
-  line-height: 1.75;
-  color: var(--mid);
-}
-.beyond-text strong {
-  font-weight: 600;
-  color: var(--ink);
-}
-
-.sidebar-divider { height: 1px; background: var(--rule); }
-
-.competency-list { list-style: none; }
-.competency-list li {
-  font-family: var(--body);
-  font-size: 11px;
-  color: var(--mid);
-  padding: 5px 0;
-  border-bottom: 1px solid var(--rule);
-  line-height: 1.4;
-}
-.competency-list li:last-child { border-bottom: none; }
-
-.press-item { margin-bottom: 12px; }
-.press-outlet {
-  font-family: var(--display);
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--ink);
-  display: block;
-}
-.press-desc {
-  font-family: var(--body);
-  font-size: 12px;
-  color: var(--lt);
-  line-height: 1.5;
-}
-
-.lang-list { display: flex; flex-direction: column; gap: 10px; }
-.lang-item { display: flex; justify-content: space-between; align-items: center; }
-.lang-name { font-family: var(--body); font-size: 13px; color: var(--ink); }
-.lang-level { font-family: var(--mono); font-size: 9px; letter-spacing: 0.1em; color: var(--lt); text-transform: uppercase; }
-.lang-dots { display: flex; gap: 3px; margin-top: 4px; }
-.lang-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--rule); }
-.lang-dot.filled { background: var(--green); }
-
-/* ── MAIN CONTENT ── */
-.content { padding: 36px 40px 36px 56px; }
-
-.section { margin-bottom: 36px; }
-
-.section-header {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 20px;
-}
-.section-title {
-  font-family: var(--display);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--green);
-  white-space: nowrap;
-}
-.section-rule { flex: 1; height: 1px; background: var(--rule); }
-
-.palette-role {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: baseline;
-  gap: 16px;
-  margin-bottom: 14px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--rule);
-}
-.palette-title {
-  font-family: var(--display);
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--ink);
-}
-.palette-dates {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  color: var(--lt);
-}
-.palette-meta {
-  font-family: var(--body);
-  font-size: 13px;
-  color: var(--mid);
-  margin-bottom: 12px;
-}
-.palette-bullets {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4px 16px;
-  margin-bottom: 4px;
-}
-.palette-bullets li {
-  font-family: var(--body);
-  font-size: 13px;
-  color: var(--mid);
-  padding-left: 18px;
-  position: relative;
-  line-height: 1.6;
-}
-.palette-bullets li::before {
-  content: '●';
-  position: absolute;
-  left: 0;
-  color: var(--green);
-  font-size: 6px;
-  top: 6px;
-}
-
-.subsection-label {
-  font-family: var(--display);
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--ink);
-  margin: 22px 0 14px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid var(--rule);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.subsection-label::before {
-  content: '';
-  display: inline-block;
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--neon);
-  flex-shrink: 0;
-}
-
-.content-intro {
-  font-family: var(--body);
-  font-size: 13px;
-  color: var(--mid);
-  margin-bottom: 14px;
-  line-height: 1.6;
-}
-
-.project-list { display: flex; flex-direction: column; gap: 0; }
-
-.project-item {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0 16px;
-  padding: 14px 8px;
-  border-bottom: 1px solid var(--rule);
-  align-items: start;
-  transition: background 0.15s;
-  cursor: default;
-  border-radius: 2px;
-}
-.project-item:hover { background: rgba(212,255,0,0.04); }
-.project-item:last-child { border-bottom: none; }
-
-.project-number {
-  font-family: var(--mono);
-  font-size: 10px;
-  color: var(--lt);
-  line-height: 1.8;
-  min-width: 20px;
-  padding-top: 2px;
-}
-
-.project-name-row {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 6px;
-}
-.project-name {
-  font-family: var(--display);
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--neon);
-  line-height: 1.3;
-}
-.project-location {
-  font-family: var(--body);
-  font-size: 12px;
-  color: var(--lt);
-}
-
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  margin-bottom: 7px;
-}
-.project-tag {
-  font-family: var(--mono);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: var(--green);
-  border: 1px solid rgba(95,184,112,0.45);
-  padding: 2px 8px;
-  border-radius: 1px;
-  background: transparent;
-}
-
-.project-desc {
-  font-family: var(--body);
-  font-size: 13px;
-  color: var(--mid);
-  line-height: 1.65;
-  margin-bottom: 5px;
-}
-.project-impact {
-  font-family: var(--body);
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--ink);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.project-impact::before { content: '↗'; color: var(--peach); font-size: 11px; font-family: var(--mono); font-weight: 300; }
-
-/* ── BMW ── */
-.bmw-block {
-  background: rgba(212,255,0,0.03);
-  border: 1px solid var(--rule);
-  border-left: 3px solid var(--neon);
-  padding: 16px 20px;
-  border-radius: 2px;
-}
-.bmw-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.bmw-title { font-family: var(--display); font-size: 15px; font-weight: 700; color: var(--ink); }
-.bmw-dates { font-family: var(--mono); font-size: 11px; color: var(--lt); letter-spacing: 0.08em; }
-.bmw-bullets { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 16px; }
-.bmw-bullets li {
-  font-family: var(--body);
-  font-size: 13px;
-  color: var(--mid);
-  padding-left: 18px;
-  position: relative;
-  line-height: 1.6;
-}
-.bmw-bullets li::before { content: '●'; position: absolute; left: 0; color: var(--green); font-size: 6px; top: 5px; }
-
-/* ── EDUCATION ── */
-.edu-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.edu-card { padding: 14px 16px; border: 1px solid var(--rule); border-radius: 2px; }
-.edu-degree { font-family: var(--display); font-size: 13px; font-weight: 700; color: var(--ink); margin-bottom: 3px; }
-.edu-school { font-family: var(--body); font-size: 13px; color: var(--mid); line-height: 1.4; }
-.edu-detail { font-family: var(--mono); font-size: 10px; color: var(--lt); letter-spacing: 0.06em; margin-top: 6px; }
-
-/* ── FOOTER ── */
-.footer-strip {
-  border-top: 3px solid var(--neon);
-  background: #5C2E18;
-  padding: 24px 56px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
-  position: relative;
-  z-index: 1;
-}
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.footer-allyship-title {
-  font-family: var(--display);
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--neon);
-}
-.footer-allyship-sub {
-  font-family: var(--body);
-  font-size: 12px;
-  color: var(--lt);
-  max-width: 340px;
-  line-height: 1.5;
-}
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 3px;
-}
-.footer-name {
-  font-family: var(--display);
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--ink);
-}
-.footer-contact-detail {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  color: var(--mid);
-}
-.footer-contact-detail a { color: var(--neon); text-decoration: none; }
-
-/* ── POSITIONING STATEMENT ── */
-.positioning {
-  font-family: var(--body);
-  font-size: 15px;
-  color: var(--mid);
-  margin-top: 14px;
-  margin-bottom: 0;
-  line-height: 1.55;
-  max-width: 620px;
-}
-
-/* ── CLIENT LOGO STRIP ── */
-.client-strip {
-  background: #5C2E18;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
-  padding: 18px 56px;
-  position: relative;
-  z-index: 1;
-}
-.client-strip-label {
-  font-family: var(--mono);
-  font-size: 9px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--lt);
-  margin-bottom: 14px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.client-strip-label::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--rule);
-}
-.client-logos {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.client-logo {
-  font-family: var(--display);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--neon);
-  padding: 6px 20px;
-  border-right: 1px solid var(--rule);
-  transition: opacity 0.2s;
-  white-space: nowrap;
-}
-.client-logo:last-child { border-right: none; }
-.client-logo:hover { opacity: 0.7; }
-
-@page { size: letter; margin: 0; }
-@media print {
-  html { background: var(--bg); zoom: 0.74; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  body { box-shadow: none; max-width: 1100px; margin: 0 auto; }
-  body::before { display: none; }
-  .masthead, .accent-rule, .main-grid, .footer-strip { animation: none; }
-  .project-item, .bmw-block, .edu-card, .press-item, .lang-item { break-inside: avoid; page-break-inside: avoid; }
-  .section-header, .subsection-label { break-after: avoid; page-break-after: avoid; }
-  .project-item:hover { background: transparent; }
-}
-</style>
+<!-- Styles — minified bundle (source: css/main.css, nav.css, portfolio.css,
+     pages.css; regenerate with `python3 build.py`) -->
+<link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
 
-<!-- ── MASTHEAD ── -->
-<header class="masthead">
-  <div class="masthead-left">
-    <div class="issue-line">Brooklyn, USA · Freiburg, Germany</div>
-    <div class="name-block">
-      <span class="name-first">STEFFI</span>
-      <span class="name-last">Behringer</span>
+<nav>
+  <div class="nav-logo" onclick="showPage('work')">STEFFI <span>Behringer</span></div>
+  <ul class="nav-links">
+    <li><a onclick="showPage('work')" class="active" id="nav-work">Work</a></li>
+    <li><a onclick="showPage('about')" id="nav-about">About</a></li>
+    <li><a href="resume/">Resume</a></li>
+  </ul>
+  <a class="nav-cta" onclick="showPage('contact')">Let's Build Together →</a>
+</nav>
+
+<!-- ======================================================= WORK PAGE ==== -->
+<div class="page active" id="page-work">
+  <section class="hero">
+    <div class="hero-eyebrow">Portfolio · 2026</div>
+    <p class="hero-positioning">Experiential · Production · Creative — specializing in cultural moments at the intersection of lifestyle, fashion, sports, and entertainment, with intention, transparency, and care for every detail.</p>
+    <div class="hero-pills">
+      <span class="hero-pill">Experiential</span>
+      <span class="hero-pill">Creative Production</span>
+      <span class="hero-pill">Account Management</span>
+      <span class="hero-pill">Project Management</span>
     </div>
-    <div class="title-strip">
-      <span class="title-pill">Experiential</span>
-      <span class="title-pill">Creative Production</span>
-      <span class="title-pill">Account Management</span>
-      <span class="title-pill">Project Management</span>
+  </section>
+
+  <div class="work-header">
+    <div class="work-title">Selected Work</div>
+    <div class="work-filter">
+      <button class="filter-btn active" onclick="filterCards('all',this)">All</button>
+      <button class="filter-btn" onclick="filterCards('experiential',this)">Experiential</button>
+      <button class="filter-btn" onclick="filterCards('content',this)">Content</button>
     </div>
-    <p class="positioning">Creative · Production · Experiential — specializing in cultural moments at the intersection of lifestyle, fashion, sports, and entertainment, with intention, transparency, and care for every detail.</p>
   </div>
-  <div class="masthead-right">
-    <div class="contact-line">
-      <a href="mailto:steffibehringer89@gmail.com">steffibehringer89@gmail.com</a><br>
-      917.518.2917<br>
-      US &amp; German Citizen<br>
-      <a href="https://linkedin.com/in/stefaniebehringer">LinkedIn · stefaniebehringer</a>
-    </div>
-  </div>
-</header>
 
-<div class="accent-rule"></div>
-
-<!-- ── MAIN ── -->
-<div class="main-grid">
-
-  <!-- ── CONTENT ── -->
-  <main class="content">
-
-    <!-- PALETTE GROUP -->
-    <section class="section">
-      <div class="section-header">
-        <span class="section-title">Experience</span>
-        <div class="section-rule"></div>
-      </div>
-      <div class="palette-role">
-        <div class="palette-title">Senior Producer (Freelance)  ·  Partner @ Palette Group</div>
-        <div class="palette-dates">2018 – Present</div>
-      </div>
-      <div class="palette-meta">New York City · Europe / US · Experiential · Brand Activations · Content Production</div>
-      <ul class="palette-bullets">
-        <li>End-to-end production across experiential, brand activation, and content projects — budgets up to $3M+</li>
-        <li>Primary creative &amp; strategic client partner across all project phases</li>
-        <li>Built internal production systems, workflows, and operational frameworks</li>
-        <li>Cross-functional vendor ecosystem: fabrication, F&amp;B, A/V, talent, staffing, agency partners</li>
-      </ul>
-    </section>
-
-    <!-- EXPERIENTIAL -->
-    <section class="section">
-      <div class="section-header">
-        <span class="section-title">Experiential &amp; Event Production</span>
-        <div class="section-rule"></div>
-      </div>
-      <p class="content-intro">Across all projects: primary client lead · budget ownership · production systems architect · vendor management</p>
-
-      <div class="project-list">
-
-        <div class="project-item">
-          <div class="project-number">01</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">YouTube Olympic Creator Studio</span>
-              <span class="project-location">Winter Olympics 2026, Milano Cortina, Italy</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Creative Direction</span>
-              <span class="project-tag">Full Build Lifecycle</span>
-              <span class="project-tag">On-Site Production</span>
-              <span class="project-tag">Budget Ownership</span>
-              <span class="project-tag">International Logistics</span>
-            </div>
-            <p class="project-desc">Oversaw creative and production teams across the full project lifecycle — creative design, fabrication, build phase, and international shipments to Italy. Managed day-to-day on-site production including camera and audio operators for live creator podcasts and interviews inside NBC's broadcast center. Talent: Kylie &amp; Jason Kelce, Bowen Yang, Tom Daley, Mikaela Shiffrin, and more.</p>
-            <div class="project-impact">NBC × YouTube Creator Collective · 65M+ social reach target</div>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">02</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">Meta Conversations 2026</span>
-              <span class="project-location">Westminster Hall, London, UK</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Speaker Operations</span>
-              <span class="project-tag">End-to-End Logistics</span>
-              <span class="project-tag">Stakeholder Management</span>
-              <span class="project-tag">VIP &amp; Executive Hospitality</span>
-              <span class="project-tag">Budget Ownership</span>
-            </div>
-            <p class="project-desc">Meta's premier global business messaging conference — 100+ industry leaders, brand executives, and innovators across two days at Westminster Hall, exploring the future of AI-powered customer engagement across WhatsApp and Meta's platforms. Served as Speaker Operations Lead and primary point of contact across Meta, Cogs &amp; Marvel, and the production team for all speaker logistics. Managed end-to-end speaker operations for 100+ speakers across nine program tracks, including international travel, accommodation and transport, speaker contracts, onboarding, communications, and VIP and executive hospitality on-site.</p>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">03</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">Verity Creator Retreat</span>
-              <span class="project-location">New York City &amp; Armonk, NY · Sept 27–29, 2026</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Creator Talent</span>
-              <span class="project-tag">On-Site Production</span>
-              <span class="project-tag">Vendor Management</span>
-              <span class="project-tag">Hospitality &amp; Glam</span>
-              <span class="project-tag">Décor &amp; Swag</span>
-            </div>
-            <p class="project-desc">Three-day, story-led creator retreat for Amazon MGM Studios' <em>Verity</em> premiere, produced with Stellar Agency. Hosted 30 creators from around the world and 3 cast members across a welcome reception at Hotel One in New York City, an immersive day at the Armonk estate where the film was shot, and a glam day ahead of the premiere. Client contact, owning vendors, on-site production, creator talent, an 8-person glam team, décor, and swag.</p>
-            <div class="project-impact">30 creators · 3 cast members · 3 live days</div>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">04</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">EMPIRE's Home Turf</span>
-              <span class="project-location">Super Bowl LX, San Francisco · Forbes-featured</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Creative Direction</span>
-              <span class="project-tag">Narrative Development</span>
-              <span class="project-tag">Fabrication &amp; Install</span>
-              <span class="project-tag">Brand Partnership</span>
-              <span class="project-tag">Budget Ownership</span>
-            </div>
-            <p class="project-desc">Directed production and delivery of EMPIRE 15: Full Circle — a multi-day, museum-style exhibition celebrating 15 years of artist-first culture. Led creative, narrative, and full build lifecycle from concept through fabrication, installation, and breakdown. Partners: Levi's + Nike Jordan. Custom listening stations, archival storytelling, and video content.</p>
-            <div class="project-impact">15,000+ visitors · $500K+ in retail sales</div>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">05</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">Xbox × Brooklyn Nets</span>
-              <span class="project-location">Bed-Stuy, Brooklyn</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Spatial Design</span>
-              <span class="project-tag">Cross-Functional Teams</span>
-              <span class="project-tag">Partner Management</span>
-              <span class="project-tag">On-Site Execution</span>
-              <span class="project-tag">Budget Ownership</span>
-            </div>
-            <p class="project-desc">Led production of a community-driven brand experience celebrating the Brooklyn Nets' 10th anniversary through gaming, transforming Seed Brooklyn into a multi-sensory hub at the intersection of gaming, sport, fashion, and culture. Gaming lounges, projection mapping, live DJ programming, curated gifting throughout the night, and custom merch in collaboration with local designer Mz. Icar.</p>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">06</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">NASCAR: Bubba's Block Party</span>
-              <span class="project-location">Richmond, VA</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Strategy &amp; Concept</span>
-              <span class="project-tag">Community Programming</span>
-              <span class="project-tag">Talent Partnerships</span>
-              <span class="project-tag">Vendor Sourcing</span>
-              <span class="project-tag">Budget Ownership</span>
-            </div>
-            <p class="project-desc">Produced NASCAR's inaugural community activation designed to authentically engage Black audiences. Led production and end-to-end delivery in partnership with Bubba Wallace. Activated nine Black-owned food vendors, live performances headlined by Wale, the Virginia State Marching Band, and family programming.</p>
-            <div class="project-impact">Sold out within 3 days · 2,000+ attendees</div>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">07</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">Bundesliga: Common Ground</span>
-              <span class="project-location">New York, NY</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Event Production</span>
-              <span class="project-tag">Programming</span>
-              <span class="project-tag">Local Partnerships</span>
-              <span class="project-tag">Budget Ownership</span>
-            </div>
-            <p class="project-desc">Led end-to-end production of the NYC launch for Bundesliga's global Common Ground platform. Competitive tournaments, FIFA eSports, ESPN+ lounge, and live DJ programming.</p>
-            <div class="project-impact">200+ attendees</div>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">08</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">Fendi × Versace 'Fendace' Retail Pop-Up</span>
-              <span class="project-location">Soho, NYC · 2022</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">On-Site Build Oversight</span>
-              <span class="project-tag">Creative &amp; Production Supervision</span>
-              <span class="project-tag">Fabrication</span>
-              <span class="project-tag">Vendor Management</span>
-              <span class="project-tag">Budget Ownership</span>
-            </div>
-            <p class="project-desc">Produced the on-site retail pop-up celebrating the landmark Fendi × Versace collab — one of luxury fashion's most talked-about moments of 2022. Oversaw creative and production with contractors, fabrication, AV vendor, and retail staff through install and store opening.</p>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">09</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">YouTube Creator Connections</span>
-              <span class="project-location">Ongoing Series</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Production Systems</span>
-              <span class="project-tag">Series Production</span>
-              <span class="project-tag">Creator Activations</span>
-              <span class="project-tag">Creative Programming</span>
-            </div>
-            <p class="project-desc">Produced culturally anchored creator gatherings across key tent poles: Met Gala, VMAs, Made On. Brought together talent across fashion, beauty, gaming, and lifestyle through marketplace formats designed for collaboration and cross-community visibility.</p>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">10</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">Google at AdWeek</span>
-              <span class="project-location">Highline Stages, NYC</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Multi-Format Programming</span>
-              <span class="project-tag">Budget Management</span>
-              <span class="project-tag">Vendor Oversight</span>
-            </div>
-            <p class="project-desc">Lead Producer of four-day event series for 1,500+ guests across 60+ countries and 800+ organizations. Eight show events: general sessions, cocktail receptions, workshops, demo experiences, and musical performances.</p>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">11</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">Zeta Live</span>
-              <span class="project-location">David Geffen Hall, Lincoln Center, New York City · Oct 8, 2026</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Budget Ownership</span>
-              <span class="project-tag">Vendor Management</span>
-              <span class="project-tag">Scenic &amp; AV</span>
-              <span class="project-tag">Talent &amp; Programming</span>
-              <span class="project-tag">Client Contact</span>
-              <span class="project-tag">On-Site Production</span>
-            </div>
-            <p class="project-desc">One-day conference for Zeta Global at David Geffen Hall, welcoming 2,500+ attendees, produced as a freelance Senior Producer through Trademark. Managed budget and vendors across scenic, AV, and fabrication from kickoff through load-out, and handled programming and talent, including author and artist signings. Day-to-day client contact for Zeta Global. On site, led the staff, including brand ambassadors and production assistants, and ran load-in, load-out, and the show schedule inside a union venue.</p>
-            <div class="project-impact">2,500+ attendees · 800+ books given away · 1,000+ merch products</div>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">12</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">Under Armour × NBA All Star Week</span>
-              <span class="project-location">Charlotte, NC</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Production Systems</span>
-              <span class="project-tag">Logistics &amp; Operations</span>
-              <span class="project-tag">Vendor Management</span>
-              <span class="project-tag">Budget Ownership</span>
-            </div>
-            <p class="project-desc">Five-day community event series with Steph Curry and Dennis Smith Jr. Managed buildout and operations of a custom double-decker command center — vendors, staffing, logistics, and city-wide programming from install through load-out.</p>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">13</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">The Rockefeller Center Holiday Pop-Up</span>
-              <span class="project-location">New York, NY</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Production Systems</span>
-              <span class="project-tag">Full Production Lifecycle</span>
-              <span class="project-tag">Daily Operations</span>
-              <span class="project-tag">Budget Ownership</span>
-            </div>
-            <p class="project-desc">Month-long activation at Rockefeller Center — custom build, daily programming, vendor sourcing, staffing, and live operations across retail and experiential programming.</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CONTENT PRODUCTION -->
-    <section class="section">
-      <div class="section-header">
-        <span class="section-title">Content Production</span>
-        <div class="section-rule"></div>
-      </div>
-      <p class="content-intro">Across all projects: primary client lead · budget ownership · crew hiring · production systems · on-set oversight · post-production</p>
-
-      <div class="project-list">
-
-        <div class="project-item">
-          <div class="project-number">01</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">Aperol Spritz × Bowen Yang</span>
-              <span class="project-location">US Open 2026</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Creative Direction</span>
-              <span class="project-tag">Crew Hiring</span>
-              <span class="project-tag">Budget Ownership</span>
-              <span class="project-tag">On-Set Execution</span>
-              <span class="project-tag">Post-Production</span>
-            </div>
-            <p class="project-desc">Creator-driven campaign featuring Bowen Yang. Led creative direction, crew build, on-site execution, and client partnership through final delivery.</p>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">02</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">Brooks Running × Patrick Schwarzenegger</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Creative Direction</span>
-              <span class="project-tag">Crew Hiring</span>
-              <span class="project-tag">Budget Ownership</span>
-              <span class="project-tag">Production Systems</span>
-              <span class="project-tag">On-Set Execution</span>
-              <span class="project-tag">Post-Production</span>
-            </div>
-            <p class="project-desc">Social-first campaign delivering platform-native content across digital channels. Hero, cutdowns, and short-form assets — full production from concept through post.</p>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">03</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">Tequila Cazadores × Cristo Fernández</span>
-              <span class="project-location">FIFA Club World Cup 2025</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Creative Execution</span>
-              <span class="project-tag">Crew Hiring</span>
-              <span class="project-tag">Budget Ownership</span>
-              <span class="project-tag">On-Set Oversight</span>
-            </div>
-            <p class="project-desc">Limited-edition 'Caz Kit' launch via M Booth. Branded imagery and short-form video across digital channels.</p>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">04</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">PUMA AW25 Back to School Campaign</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Creative Oversight</span>
-              <span class="project-tag">Crew Hiring</span>
-              <span class="project-tag">Budget Ownership</span>
-              <span class="project-tag">Post-Production Leadership</span>
-            </div>
-            <p class="project-desc">Oversaw production of cinematic vignettes — creative execution from concept through final asset delivery.</p>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-number">05</div>
-          <div class="project-body">
-            <div class="project-name-row">
-              <span class="project-name">Clarks AW25 Wallabee Evo 'Back to School'</span>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Client Lead</span>
-              <span class="project-tag">Creative Direction</span>
-              <span class="project-tag">Crew Hiring</span>
-              <span class="project-tag">Budget Ownership</span>
-              <span class="project-tag">Location Management</span>
-              <span class="project-tag">Post-Production</span>
-            </div>
-            <p class="project-desc">Narrative-driven campaign blending heritage and contemporary street style. Full lifecycle: creative direction, crew build, location management, and post for digital and in-store deliverables.</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- BMW -->
-    <section class="section">
-      <div class="section-header">
-        <span class="section-title">Earlier Experience</span>
-        <div class="section-rule"></div>
-      </div>
-      <div class="bmw-block">
-        <div class="bmw-header">
-          <div class="bmw-title">Retail Design &amp; Sales Manager · BMW of North America</div>
-          <div class="bmw-dates">Jan 2014 – Dec 2017 · New York, NY</div>
-        </div>
-        <ul class="bmw-bullets">
-          <li>Founded the first-ever Retail Design Program for BMW &amp; MINI across America — 339 dealerships nationwide</li>
-          <li>Two-time worldwide award winner in retail experience &amp; sales growth (2015, 2016)</li>
-          <li>Managed $2M+ in logistics and bulk orders from two international vendors to five US warehouses</li>
-          <li>Produced the Accessory &amp; Lifestyle experience at the largest Aftersales conference in Las Vegas — 2,000+ attendees</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="section">
-      <div class="section-header">
-        <span class="section-title">Education</span>
-        <div class="section-rule"></div>
-      </div>
-      <div class="edu-strip">
-        <div class="edu-card">
-          <div class="edu-degree">B.A. International Management</div>
-          <div class="edu-school">University of Applied Sciences Augsburg, Germany</div>
-          <div class="edu-detail">2009 – 2013 · 3.5 GPA</div>
-        </div>
-        <div class="edu-card">
-          <div class="edu-degree">DAAD Scholarship</div>
-          <div class="edu-school">Study Program · Buenos Aires, Argentina</div>
-          <div class="edu-detail">Global Marketing &amp; Project Management</div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ── SIDEBAR ── -->
-  <aside class="sidebar">
-
-    <div>
-      <span class="sidebar-label">Beyond the Resume</span>
-      <p class="beyond-text">
-        German precision meets Brooklyn energy. Fluent in German and English with a sprinkle of Spanish. When not on set: running, shooting film, and rearranging rooms until they earn their place.<br><br>
-        <strong>Available across the US &amp; Europe.</strong>
-      </p>
-    </div>
-
-    <div class="sidebar-divider"></div>
-
-    <div>
-      <span class="sidebar-label">Selected Clients</span>
-      <div class="competency-list">
-        <div style="font-family:var(--body);font-size:12px;color:var(--ink);padding:5px 0;border-bottom:1px solid var(--rule);font-weight:500;">YouTube</div>
-        <div style="font-family:var(--body);font-size:12px;color:var(--ink);padding:5px 0;border-bottom:1px solid var(--rule);font-weight:500;">Google</div>
-        <div style="font-family:var(--body);font-size:12px;color:var(--ink);padding:5px 0;border-bottom:1px solid var(--rule);font-weight:500;">EMPIRE</div>
-        <div style="font-family:var(--body);font-size:12px;color:var(--ink);padding:5px 0;border-bottom:1px solid var(--rule);font-weight:500;">Xbox</div>
-        <div style="font-family:var(--body);font-size:12px;color:var(--ink);padding:5px 0;border-bottom:1px solid var(--rule);font-weight:500;">Under Armour</div>
-        <div style="font-family:var(--body);font-size:12px;color:var(--ink);padding:5px 0;border-bottom:1px solid var(--rule);font-weight:500;">BMW</div>
-        <div style="font-family:var(--body);font-size:12px;color:var(--ink);padding:5px 0;border-bottom:1px solid var(--rule);font-weight:500;">PUMA</div>
-        <div style="font-family:var(--body);font-size:12px;color:var(--ink);padding:5px 0;border-bottom:1px solid var(--rule);font-weight:500;">Clarks</div>
-        <div style="font-family:var(--body);font-size:12px;color:var(--ink);padding:5px 0;border-bottom:1px solid var(--rule);font-weight:500;">Aperol Spritz</div>
-        <div style="font-family:var(--body);font-size:12px;color:var(--ink);padding:5px 0;font-weight:500;">Fendi</div>
-        <div style="font-family:var(--body);font-size:12px;color:var(--lt);padding:5px 0;font-style:italic;">...and more</div>
-      </div>
-    </div>
-
-    <div class="sidebar-divider"></div>
-
-    <div>
-      <span class="sidebar-label">Core Skills</span>
-      <ul class="competency-list">
-        <li>Experiential Production</li>
-        <li>Brand Activations</li>
-        <li>Immersive Events &amp; Pop-Ups</li>
-        <li>Content &amp; Creative Production</li>
-        <li>Client Account Management</li>
-        <li>Budget Management</li>
-        <li>Production Systems &amp; Ops</li>
-        <li>Vendor &amp; Stakeholder Mgmt</li>
-        <li>International Production</li>
-      </ul>
-    </div>
-
-    <div class="sidebar-divider"></div>
-
-    <div>
-      <span class="sidebar-label">Languages</span>
-      <div class="lang-list">
-        <div class="lang-item">
-          <div>
-            <div class="lang-name">German</div>
-            <div class="lang-dots">
-              <div class="lang-dot filled"></div><div class="lang-dot filled"></div>
-              <div class="lang-dot filled"></div><div class="lang-dot filled"></div>
-              <div class="lang-dot filled"></div>
-            </div>
-          </div>
-          <div class="lang-level">Native</div>
-        </div>
-        <div class="lang-item">
-          <div>
-            <div class="lang-name">English</div>
-            <div class="lang-dots">
-              <div class="lang-dot filled"></div><div class="lang-dot filled"></div>
-              <div class="lang-dot filled"></div><div class="lang-dot filled"></div>
-              <div class="lang-dot filled"></div>
-            </div>
-          </div>
-          <div class="lang-level">Fluent</div>
-        </div>
-        <div class="lang-item">
-          <div>
-            <div class="lang-name">Spanish</div>
-            <div class="lang-dots">
-              <div class="lang-dot filled"></div><div class="lang-dot filled"></div>
-              <div class="lang-dot filled"></div><div class="lang-dot"></div>
-              <div class="lang-dot"></div>
-            </div>
-          </div>
-          <div class="lang-level">Intermediate</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="sidebar-divider"></div>
-
-    <div>
-      <span class="sidebar-label">Press</span>
-      <div class="press-list">
-        <div class="press-item">
-          <span class="press-outlet">Forbes</span>
-          <span class="press-desc">EMPIRE's Home Turf — Super Bowl LX</span>
-        </div>
-        <div class="press-item">
-          <span class="press-outlet">Adweek</span>
-          <span class="press-desc">Allyship &amp; Action · Equality Advocacy · Virtual Events</span>
-        </div>
-        <div class="press-item">
-          <span class="press-outlet">Ad Council</span>
-          <span class="press-desc">Champions for Good</span>
-        </div>
-        <div class="press-item">
-          <span class="press-outlet">Podcasts</span>
-          <span class="press-desc">Get Together · We Are Rosie · Ahead of the Curve</span>
-        </div>
-      </div>
-    </div>
-
-  </aside>
+  <!-- Cards are rendered from js/projects.js by js/grid.js -->
+  <div class="project-grid" id="project-grid"></div>
 </div>
 
-<!-- ── FOOTER ── -->
-<footer class="footer-strip">
-  <div class="footer-left">
-    <div class="footer-allyship-title">Allyship &amp; Action · Co-Founder</div>
-    <div class="footer-allyship-sub">Amplifying underrepresented voices in advertising &amp; production</div>
+<!-- ====================================================== ABOUT PAGE ==== -->
+<div class="page" id="page-about">
+  <div class="about-page">
+    <div class="about-hero">
+      <div>
+        <div class="about-label">About</div>
+        <h1 class="about-heading">Black Forest roots.<br><em>Brooklyn energy.</em></h1>
+        <div class="about-text">
+          <p>Senior Producer — based in Brooklyn, available across the US and Europe. For the past eight years I've built cultural moments at the intersection of lifestyle, fashion, sports, and entertainment.</p>
+          <p>My experience spans both sides of the industry — in-house at an agency and as a freelance senior producer, always as the primary client partner and end-to-end owner.</p>
+          <p>Before the agency world, I founded BMW North America's first retail design program — a pilot that started with 10 BMW dealers on the East Coast, and after six months we scaled it to 339 dealers nationwide.</p>
+          <p>German-raised, Brooklyn-made. Fluent in German and English with a sprinkle of Spanish. When not on set: running, shooting film, and rearranging rooms until they earn their place.</p>
+        </div>
+      </div>
+      <!-- Photo intentionally omitted for now. To add one later: give
+           .about-hero the class "has-photo" and drop a photo column back in
+           (see .about-hero.has-photo in css/pages.css). -->
+    </div>
+    <div class="about-details">
+      <div class="about-detail-card">
+        <div class="detail-label">Availability</div>
+        <div class="detail-content"><strong>US &amp; German Citizen</strong><br>Available across the US and Europe.<br>Brooklyn, NY · Freiburg, Germany</div>
+      </div>
+      <div class="about-detail-card">
+        <div class="detail-label">Languages</div>
+        <div class="detail-content"><strong>German</strong> — Native<br><strong>English</strong> — Fluent<br><strong>Spanish</strong> — Intermediate</div>
+      </div>
+      <div class="about-detail-card">
+        <div class="detail-label">Beyond the Brief</div>
+        <div class="detail-content">Marathon runner · Film photographer · Interior design obsessive · Detail-driven to the last corner of a room</div>
+      </div>
+    </div>
+    <div class="about-allyship">
+      <div>
+        <div class="allyship-title">Allyship &amp; Action · Co-Founder</div>
+        <div class="allyship-text">Community-driven initiative amplifying underrepresented voices in advertising and production. Featured in Adweek, Ad Council, and Forbes.</div>
+      </div>
+      <div>
+        <a href="https://www.adweek.com/agencies/5-takeaways-allyship-action-execs-better-allies/" class="allyship-link" target="_blank" rel="noopener">Adweek: 5 Takeaways From Allyship &amp; Action</a>
+        <a href="https://drive.google.com/file/d/1Sok7X1nSyW7-N40NEiH50WABASWHIrJO/view" class="allyship-link" target="_blank" rel="noopener">Adweek: Why Your Virtual Event Sucks</a>
+      </div>
+    </div>
   </div>
-  <div class="footer-right">
-    <div class="footer-name">Steffi Behringer</div>
-    <div class="footer-contact-detail"><a href="mailto:steffibehringer89@gmail.com">steffibehringer89@gmail.com</a></div>
-    <div class="footer-contact-detail">917.518.2917</div>
+</div>
+
+<!-- ==================================================== CONTACT PAGE ==== -->
+<div class="page" id="page-contact">
+  <div class="contact-page">
+    <div class="contact-heading">Let's build</div>
+    <div class="contact-sub">something together.</div>
+    <p class="contact-text">Whether it's a brand activation, a content campaign, or something that doesn't have a name yet — I'd love to hear what you're working on.</p>
+    <div class="contact-detail"><span class="contact-detail-label">Email</span><span class="contact-detail-value"><a href="mailto:steffibehringer89@gmail.com">steffibehringer89@gmail.com</a></span></div>
+    <div class="contact-detail"><span class="contact-detail-label">Phone</span><span class="contact-detail-value">917.518.2917</span></div>
+    <div class="contact-detail"><span class="contact-detail-label">LinkedIn</span><span class="contact-detail-value"><a href="https://linkedin.com/in/stefaniebehringer" target="_blank" rel="noopener">stefaniebehringer</a></span></div>
+    <div class="contact-detail"><span class="contact-detail-label">Based</span><span class="contact-detail-value">Brooklyn, NY · Available US &amp; Europe</span></div>
+    <a href="resume/" class="contact-btn">View Full Resume →</a>
   </div>
+</div>
+
+<footer>
+  <div class="footer-logo">STEFFI Behringer</div>
+  <div class="footer-cheeky">Arrives early. Leaves late. Brings snacks.</div>
+  <div class="footer-contact"><a href="mailto:steffibehringer89@gmail.com">steffibehringer89@gmail.com</a><br>917.518.2917</div>
 </footer>
 
+<!-- ========================================================== MODAL ==== -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModalOutside(event)">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-inner">
+      <div class="modal-close"><button class="modal-close-btn" onclick="closeModal()">✕ Close</button></div>
+      <div class="modal-header">
+        <div class="modal-tags" id="modal-tags"></div>
+        <div class="modal-title" id="modal-title"></div>
+        <div class="modal-location" id="modal-location"></div>
+      </div>
+      <div id="modal-video-wrap"></div>
+      <div id="modal-images-wrap"></div>
+      <div class="modal-body">
+        <div>
+          <div class="modal-desc" id="modal-desc"></div>
+          <div class="modal-impact" id="modal-impact"></div>
+        </div>
+        <div>
+          <span class="modal-sidebar-label">My Role</span>
+          <div id="modal-roles"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts. projects.js is your editable data (loaded readable). The engine
+     (nav + filter + modal + grid) is the minified bundle app.min.js; it needs
+     PROJECTS + openModal defined, so it loads after projects.js.
+     Source: js/nav.js, filter.js, modal.js, grid.js — rebuild with
+     `python3 build.py`. -->
+<script src="js/projects.js"></script>
+<script src="js/app.min.js"></script>
 </body>
 </html>
